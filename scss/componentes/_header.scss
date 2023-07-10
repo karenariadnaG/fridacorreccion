@@ -1,0 +1,167 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.sucasa{
+ background-image: url("../img/accidente2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   
+
+.dispositivo{ 
+   display:flex;
+    .foto:hover{
+      filter:blur(3px)
+    }
+    
+  }
+
+  /*overflow: hidden;
+      -webkit-transform:scale(1.2);transform:scale(1.2);*/
+
+/*filter:blur(3px)*/
+
+h2 {
+    background-color: nth($colores, 1);
+    text-align: center;
+    color: nth($colores, 4);
+    font-family:map-get($cabecera, font-family);
+    font-size: nth($size, 1);
+    padding: 20px;
+  }
+  
+h3 {
+    font-family: inter;
+    align-items: center;
+    color: nth($colores, 2);
+    padding: 30px;
+  }
+
+header{
+    margin: 40px;
+    h1{
+        font-family:map-get($cabecera, font-family);
+        font-size: 80px;
+        text-align: center;
+        font-family: courgette;
+
+    }
+}
+
+
+
+
+.f1{
+    display: flex;
+    justify-content: center;
+    background-color:nth($colores, 1);
+    height: 230px;
+    width: auto;
+   
+   
+    .iframe{
+        margin: 20px;
+        flex-direction: row;
+    }
+
+}
+
+footer{
+  display: flex;
+  background-color: rgb(162, 161, 162);
+  margin: 35px;
+  nav{
+    font-family: courgette;
+    margin: 20px;
+    @mixin footer{
+      a{
+        color: nth($colores, 2);
+
+      }
+      
+    }
+
+  }
+}
+  
+    
+
+
+
+
+section{
+   @include section;
+    .parrafo1{
+      @extend %parrafo
+        
+  }
+}
+
+.obra1{
+    margin: 60px;
+    justify-content: space-around;
+}
+
+.menu{
+  position: fixed;  
+}
+
+
+
+.parrafo1:hover{
+  transform: translate(200px);
+  transition: all 2 ease-in;
+
+}
+
+
+
+/*suscripcion*/
+
+  .suscripcion{
+    flex-direction: column;
+    margin: 25px;   
+    form{
+      display: flex;
+      flex-wrap:wrap;
+      border-radius: 5px;
+      
+      & > input {
+          flex: 5 1 10ch;
+          border-radius: 5px;
+              
+        &[type="email"] {
+          width: 90px;
+          height:40px;
+          border-radius: 5px;
+        }
+      }
+    }
+    
+    input {
+      border: none;
+      background: nth($colores, 3);
+      border-radius: 0.3px;
+      margin:20px;
+      
+      &[type="submit"] {
+        background: nth($colores, 2);
+        color: nth($colores, 4)
+      }
+    }
+    
+  }
+
+
+  @media handheld, only screen and (max-width: 767px) {
+    .dispositivo {
+      display: none;
+    }
+    .parrafo1:hover {
+      transform: none;
+    }
+  }
+
+

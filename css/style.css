@@ -1,0 +1,136 @@
+section .parrafo1 {
+  background-color: rgb(162, 161, 162);
+  padding: 20px;
+  width: 520px;
+  height: 410;
+  margin: 60px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.sucasa {
+  background-image: url("../img/accidente2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dispositivo {
+  display: flex;
+}
+.dispositivo .foto:hover {
+  filter: blur(3px);
+}
+
+/*overflow: hidden;
+    -webkit-transform:scale(1.2);transform:scale(1.2);*/
+/*filter:blur(3px)*/
+h2 {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: courgette;
+  font-size: 40px;
+  padding: 20px;
+}
+
+h3 {
+  font-family: inter;
+  align-items: center;
+  color: red;
+  padding: 30px;
+}
+
+header {
+  margin: 40px;
+}
+header h1 {
+  font-family: courgette;
+  font-size: 80px;
+  text-align: center;
+  font-family: courgette;
+}
+
+.f1 {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 230px;
+  width: auto;
+}
+.f1 .iframe {
+  margin: 20px;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(162, 161, 162);
+  margin: 35px;
+}
+footer nav {
+  font-family: courgette;
+  margin: 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.obra1 {
+  margin: 60px;
+  justify-content: space-around;
+}
+
+.menu {
+  position: fixed;
+}
+
+.parrafo1:hover {
+  transform: translate(200px);
+  transition: all 2 ease-in;
+}
+
+/*suscripcion*/
+.suscripcion {
+  flex-direction: column;
+  margin: 25px;
+}
+.suscripcion form {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+.suscripcion form > input {
+  flex: 5 1 10ch;
+  border-radius: 5px;
+}
+.suscripcion form > input[type=email] {
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+}
+.suscripcion input {
+  border: none;
+  background: rgb(162, 161, 162);
+  border-radius: 0.3px;
+  margin: 20px;
+}
+.suscripcion input[type=submit] {
+  background: red;
+  color: white;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  .dispositivo {
+    display: none;
+  }
+  .parrafo1:hover {
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

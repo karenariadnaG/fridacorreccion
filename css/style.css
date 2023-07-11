@@ -11,6 +11,10 @@ section .parrafo1 {
   margin: 0px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .sucasa {
   background-image: url("../img/accidente2.jpeg");
   background-repeat: no-repeat;
@@ -70,7 +74,13 @@ footer {
   background-color: rgb(162, 161, 162);
   margin: 35px;
 }
-footer nav {
+footer h1 {
+  font-size: 15px;
+  margin: 20px;
+  color: red;
+}
+
+nav {
   font-family: courgette;
   margin: 20px;
 }

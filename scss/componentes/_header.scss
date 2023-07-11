@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .sucasa{
  background-image: url("../img/accidente2.jpeg");
     background-repeat: no-repeat;
@@ -68,24 +72,33 @@ header{
 
 }
 
-footer{
-  display: flex;
+footer{ display: flex;
   background-color: rgb(162, 161, 162);
   margin: 35px;
-  nav{
-    font-family: courgette;
+  h1{
+    font-size: 15px;
     margin: 20px;
-    @mixin footer{
-      a{
-        color: nth($colores, 2);
-
-      }
-      
-    }
-
-  }
+    color: red
+  }  
 }
-  
+
+nav{
+  font-family: courgette;
+  margin: 20px;
+  @mixin footer{
+    a{
+      font-size: 15px;
+      text-decoration-line: none;
+
+    }
+    
+  }
+
+}
+
+
+ 
+ 
     
 
 

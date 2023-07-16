@@ -58,17 +58,15 @@ header h1 {
 
 .f1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: black;
-  height: 230px;
-  width: auto;
-}
-.f1 .iframe {
-  display: inline-block;
 }
 
 footer {
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   background-color: rgb(162, 161, 162);
   margin: 35px;
 }
@@ -77,13 +75,18 @@ footer h1 {
   margin: 20px;
   color: red;
 }
-
-.paginasenfooter {
-  text-align: center;
-}
-.paginasenfooter div {
-  font-family: courgette;
+footer h4 {
+  font-size: 20px;
+  margin: 10px;
   color: red;
+  padding: 10px;
+}
+
+.interes {
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: courgette;
+  color: black;
 }
 
 nav {
@@ -112,13 +115,21 @@ section {
 .menu {
   position: fixed;
   z-index: 1;
-  margin: 50px;
+  padding: 10px;
+  margin: 20px;
 }
 
 .container-fluid {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.parrafo2 {
+  background-color: none;
+  padding: 20px;
+  width: 520px;
+  margin: 60px;
 }
 
 /*suscripcion*/
@@ -151,12 +162,13 @@ section {
   color: white;
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .dispositivo {
     display: none;
   }
-  .parrafo1:hover {
-    transform: none;
+  .paginasenfooter {
+    display: flex;
+    display: inline-block;
   }
 }
 

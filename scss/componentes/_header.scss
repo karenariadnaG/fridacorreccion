@@ -57,38 +57,45 @@ header{
 
 
 
+
 .f1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color:nth($colores, 1);
-    height: 230px;
-    width: auto;
-   
-   
-    .iframe{
-     display: inline-block;
-    }
+    
 
 }
 
-footer{ display: flex;
+footer{ 
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
   background-color: rgb(162, 161, 162);
   margin: 35px;
+
   h1{
     font-size: 15px;
     margin: 20px;
     color: red;
-  }  
+  } 
+  h4{
+    font-size: 20px;
+    margin: 10px;
+    color: red;
+    padding: 10px;
+  
+  } 
 }
 
-.paginasenfooter{
-  text-align: center;
-  
-  div{
+
+.interes{
+      flex-wrap: wrap;
+      justify-content: center;
       font-family: courgette;
-      color: red;
+      color: black;
   }
-  }
+  
 
  
 
@@ -121,14 +128,15 @@ section{
 }
 
 .obra1{
-    margin: 60px;
-    justify-content: space-around;
+  margin: 60px;
+  justify-content: space-around;
 }
 
 .menu{
   position:fixed;
   z-index: 1; 
-  margin: 50px;
+  padding: 10px;
+  margin: 20px;
 
 }
 
@@ -136,6 +144,12 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .parrafo2{
+    background-color: none;
+    padding: 20px;
+    width: 520px;
+    margin: 60px;
   }
 
 
@@ -176,13 +190,16 @@ section{
   }
 
 
-  @media handheld, only screen and (max-width: 767px) {
+  @media only screen and (max-width: 767px) {
     .dispositivo {
       display: none;
     }
-    .parrafo1:hover {
-      transform: none;
+  
+    .paginasenfooter{
+      display: flex;
+      display: inline-block;
     }
+    
   }
 
 

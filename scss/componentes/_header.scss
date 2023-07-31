@@ -1,206 +1,170 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
-.sucasa{
- background-image: url("../img/accidente2.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.sucasa {
+  background-image: url("../img/accidente2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-   
 
-.dispositivo{ 
-   display:flex;
-    .foto:hover{
-      filter:blur(3px)
-    }
-    
-  }
+.menu {
+  position: fixed;
+  z-index: 1;
+  padding: 10px;
+  margin: 20px;
 
-  /*overflow: hidden;
-      -webkit-transform:scale(1.2);transform:scale(1.2);*/
+}
 
-/*filter:blur(3px)*/
-
-h2 {
-    background-color: nth($colores, 1);
-    text-align: center;
-    color: nth($colores, 4);
-    font-family:map-get($cabecera, font-family);
-    font-size: nth($size, 1);
-    padding: 20px;
-  }
+.foto:hover {
+  filter: blur(3px);
+}
+.dispositivo{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:20px;
   
-h3 {
-    font-family: inter;
-    align-items: center;
-    color: nth($colores, 2);
-    padding: 30px;
+  
+}
+
+header {
+  margin: 40px;
+
+  h1 {
+    font-family: map-get($cabecera, font-family);
+    font-size: 80px;
+    text-align: center;
+    font-family: courgette;
+
   }
-
-header{
-    margin: 40px;
-    h1{
-        font-family:map-get($cabecera, font-family);
-        font-size: 80px;
-        text-align: center;
-        font-family: courgette;
-
-    }
+}
+h2 {
+  background-color: nth($colores, 1);
+  text-align: center;
+  color: nth($colores, 4);
+  font-family: map-get($cabecera, font-family);
+  font-size: nth($size, 1);
+  padding: 20px;
+}
+h3 {
+  font-family: inter;
+  align-items: center;
+  color: nth($colores, 2);
+  padding: 30px;
 }
 
 
 
-
-
-.f1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color:nth($colores, 1);
-    
-
-}
-
-footer{ 
+footer {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   background-color: rgb(162, 161, 162);
   margin: 35px;
 
-  h1{
+  h1 {
     font-size: 15px;
     margin: 20px;
     color: red;
-  } 
-  h4{
-    font-size: 20px;
-    margin: 10px;
-    color: red;
-    padding: 10px;
-  
-  } 
-}
-
-
-.interes{
-      flex-wrap: wrap;
-      justify-content: center;
-      font-family: courgette;
-      color: black;
   }
-  
 
- 
+  nav {
+    font-family: courgette;
+    margin: 20px;
+    display: inline-block;
 
-nav{
-   font-family: courgette;
-   margin: 20px;
-   display: inline-block;
- 
-    a{
+    a {
       font-size: 15px;
-      margin:30px;
+      margin: 30px;
       color: black;
       text-decoration: none;
-   
-  }
 
+    }
+
+  }
+}
+
+.f1{
+   margin: 20px;
+   justify-content: center;
+    background-color: nth($colores, 1);
 }
 
 
 
-
-
-section{
+section {
   display: inline-block;
-   @include section;
-    .parrafo1{
-      @extend %parrafo
-        
+  @include section;
+
+  .parrafo1 {
+    @extend %parrafo
   }
 }
 
-.obra1{
+.obra1 {
   margin: 60px;
   justify-content: space-around;
 }
 
-.menu{
-  position:fixed;
-  z-index: 1; 
-  padding: 10px;
-  margin: 20px;
 
+.parrafo2 {
+  background-color: none;
+  padding: 20px;
+  width: 520px;
+  margin: 60px;
 }
-
-.container-fluid{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .parrafo2{
-    background-color: none;
-    padding: 20px;
-    width: 520px;
-    margin: 60px;
-  }
 
 
 /*suscripcion*/
 
-  .suscripcion{
-    flex-direction: column;
-    margin: 25px;   
-    form{
-      display: flex;
-      flex-wrap:wrap;
+.suscripcion {
+  flex-wrap: wrap;
+   margin: 25px;
+ 
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+
+    &>input {
+      flex: 5 1 10ch;
       border-radius: 5px;
-      
-      & > input {
-          flex: 5 1 10ch;
-          border-radius: 5px;
-              
-        &[type="email"] {
-          width: 90px;
-          height:40px;
-          border-radius: 5px;
-        }
+
+      &[type="email"] {
+        width: 90px;
+        height: 40px;
+        border-radius: 5px;
       }
     }
-    
-    input {
-      border: none;
-      background: nth($colores, 3);
-      border-radius: 0.3px;
-      margin:20px;
-      
-      &[type="submit"] {
-        background: nth($colores, 2);
-        color: nth($colores, 4)
-      }
-    }
-    
   }
 
+  input {
+    border: none;
+    background: nth($colores, 3);
+    border-radius: 0.3px;
+    margin: 20px;
 
-  @media only screen and (max-width: 767px) {
-    .dispositivo {
-      display: none;
+    &[type="submit"] {
+      background: nth($colores, 2);
+      color: nth($colores, 4)
     }
-  
-    .paginasenfooter{
-      display: flex;
-      display: inline-block;
-    }
-    
   }
+
+}
+
+
+@media (max-width: 767px) {
+  .dispositivo{
+    display: none;
+  }
+}
 
 
 

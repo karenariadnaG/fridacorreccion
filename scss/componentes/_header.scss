@@ -96,6 +96,10 @@ footer {
     background-color: nth($colores, 1);
 }
 
+.carrusel{
+  display: flex;
+  justify-content: center;
+}
 
 
 section {
@@ -119,6 +123,8 @@ section {
   width: 520px;
   margin: 60px;
 }
+
+
 
 
 /*suscripcion*/

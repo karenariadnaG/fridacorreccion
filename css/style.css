@@ -94,6 +94,11 @@ footer nav a {
   background-color: black;
 }
 
+.carrusel {
+  display: flex;
+  justify-content: center;
+}
+
 section {
   display: inline-block;
   display: flex;
